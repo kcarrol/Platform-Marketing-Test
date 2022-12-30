@@ -68,7 +68,7 @@ jobs:
           run: build
           branch: ${{ github.event.client_payload.data.branch }}
           directory: ${{ github.event.client_payload.data.directory }}
-          platform: ${{ github.event.client_payload.data.platform }}
+          platform: ${{ github.event.client_payload.data.platform }} 
       - id: gh-pages
         name: Publishing to GitHub Pages...
         uses: JamesIves/github-pages-deploy-action@4.1.0
